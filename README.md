@@ -83,3 +83,7 @@ Follow the steps below to fulfill the configuration
 
 ![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/5%20-%20dbt%20queries.png)
 ![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/6%20-%20New%20Tables%20at%20BigQuery.png)
+
+
+## Report Dashboard 
+The Dashboard can be accessed in the following [link](https://lookerstudio.google.com/reporting/584e9ca7-347e-4625-a8c4-956979bac281). It consist of 3 pages with different graphics to understand better the Fires in South America and it progress in the last years
