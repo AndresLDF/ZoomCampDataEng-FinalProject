@@ -53,6 +53,7 @@ You have to install in your computer the following:
 - Docker
 
 ## Extracting information and moving it to Google Cloud
+Follow the steps below to fulfill the configuration
  1. Start Docker
  2. Open the directory with the repository
  3. Use the command `docker compose build` (do this only the first time)
@@ -71,3 +72,14 @@ You have to install in your computer the following:
 ![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/2%20-%20Partitions%20Created.png)
 ![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/3%20-%20Partitions%20in%20Buckets.png)
 ![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/4%20-%20Information%20moved%20from%20Buckets%20to%20BigQuery.png)
+## Use dbt to modify to create new tables
+**Steps to follow**
+1. In Dbt cloud open the project with the files from the repository **[data-engineering-zoomcamp-DBT](https://github.com/AndresLDF/data-engineering-zoomcamp-DBT)**
+2. Build the file at final_project/models/staging/schema.yml
+3. Build the file at final_project/models/staging/staging/stg_staging__all_data.sql
+4. Build the file at final_project/models/core/fires_year.sql
+5. Build the file at final_project/models/core/year_variation.sql
+6. This will create the table fires_year, and year_variation in Bigquery 
+
+![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/5%20-%20dbt%20queries.png)
+![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/6%20-%20New%20Tables%20at%20BigQuery.png)
