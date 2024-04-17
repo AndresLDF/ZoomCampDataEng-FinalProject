@@ -7,6 +7,7 @@ For this project the following technologies are employed:
   - PySpark  
  - Mage AI
  - dbt
+
 The database is extracted from
 - [Fire Database from the Brazil Government](http://terrabrasilis.dpi.inpe.br/queimadas/portal/dados-abertos/#da-focos)
 
