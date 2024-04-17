@@ -1,3 +1,4 @@
+# ZoomCamp Data Eng - Final Project
 
 ## Introduction
 
@@ -7,10 +8,32 @@ For this project the following technologies are employed:
   - PySpark  
  - Mage AI
  - dbt
+ - Google Storate
+ - Google BigQuery
 
 The database is extracted from
 - [Fire Database from the Brazil Government](http://terrabrasilis.dpi.inpe.br/queimadas/portal/dados-abertos/#da-focos)
 
 The basic flow flow is
 
- 1. The information item
+ 1. The information from the government site is extracted using the PySpark and divide in partitions 
+ 2. Each partition is uploaded to buckets using the Mage API to trigger a Pipeline
+ 3. Then a second pipeline is call with the API to upload the information in the bucket files to BigQuary
+ 4. Then dbt is used to create some working tables
+ 5. Looker Studio is used to analyze the tables created to condense the information 
+
+## Preparation
+Before run this project do the following configuration
+**PySpark and MageAI**
+1. Go into a local folder and clone this repository with this command `gh repo clone AndresLDF/ZoomCampDataEng-FinalProject`
+2. In the main folder add they Json file with the key for BigQuery 
+3. Open the file magic-zoomcamp/io_config.yaml
+4. In the file search for GOOGLE_SERVICE_ACC_KEY_FILEPATH
+5. Replace glossy-grin-413315-49491a38ee63.json with your own json file name
+
+**Google Cloud Configuration**
+1. Go to your Google Cloud count account control panel
+2.  Go to IAM
+3. Go to Service Account
+4. Create a Service Account with comple access to Google Storage and BigQuery
+5. Download the Json file (this is the one that you use in mage) to the 
