@@ -52,7 +52,7 @@ You have to install in your computer the following:
 - Jupyter Notebook
 - Docker
 
-##Extracting information and moving it to Google Cloud
+## Extracting information and moving it to Google Cloud
  1. Start Docker
  2. Open the directory with the repository
  3. Use the command `docker compose build` (do this only the first time)
@@ -62,9 +62,12 @@ You have to install in your computer the following:
  7. Open the file "Complete Work Flow.ipynb"
  8. Run all the cells
 
-running this you will be able to 
-
+**running this you will be able to** 
 - Download all the files between year 2009 and 2023 for the South America fires
 - Create a partitions for each files
 - Upload the partitions to Bucket
 - Move the information from Buckets to BigQuery
+![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/1%20-%20Files%20Downloaded.png)
+![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/2%20-%20Partitions%20Created.png)
+![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/3%20-%20Partitions%20in%20Buckets.png)
+![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/4%20-%20Information%20moved%20from%20Buckets%20to%20BigQuery.png)
