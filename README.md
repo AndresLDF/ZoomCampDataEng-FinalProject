@@ -37,3 +37,34 @@ Before run this project do the following configuration
 3. Go to Service Account
 4. Create a Service Account with comple access to Google Storage and BigQuery
 5. Download the Json file (this is the one that you use in mage) to the 
+
+**DBT configuration**
+1. Go to dbt cloud and create a new project
+2. Create a new dbt project
+3. Link the project to a git repository
+4. Fill the git repository with the files in this repository **[data-engineering-zoomcamp-DBT](https://github.com/AndresLDF/data-engineering-zoomcamp-DBT)**
+
+Other configuration
+You have to install in your computer the following:
+
+- Spark
+- Python
+- Jupyter Notebook
+- Docker
+
+##Extracting information and moving it to Google Cloud
+ 1. Start Docker
+ 2. Open the directory with the repository
+ 3. Use the command `docker compose build` (do this only the first time)
+ 4. Use the command `docker compose up`
+ 5. check that mage is online at http://localhost:6789
+ 6. Go back to the directory with the repository and star Jupyter Notebook
+ 7. Open the file "Complete Work Flow.ipynb"
+ 8. Run all the cells
+
+running this you will be able to 
+
+- Download all the files between year 2009 and 2023 for the South America fires
+- Create a partitions for each files
+- Upload the partitions to Bucket
+- Move the information from Buckets to BigQuery
