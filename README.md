@@ -40,7 +40,7 @@ Before run this project do the following configuration
 
 **Google Cloud Configuration**
 1. Go to your Google Cloud count account control panel
-2.  Go to IAM
+2. Go to IAM
 3. Go to Service Account
 4. Create a Service Account with comple access to Google Storage and BigQuery
 5. Download the Json file (this is the one that you use in mage) to the 
@@ -69,11 +69,11 @@ Follow the steps below to fulfill the configuration
  6. Select the API type
  7. Copy the End Point URL
  8. Save the new Trigger
- 9.  10. Go back to the directory with the repository and start Jupyter Notebook
- 11. Open the file "Complete Work Flow.ipynb"
- 12. Replache the Variable API1 with the End Point URL from step 7
- 13. Repeat steps 2 to 12 but this time with the pipeline fires_bucket_to_bigquery and the variable API2
- 14. Run all the cells in the file file ["Complete Work Flow.ipynb"](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/Complete%20Work%20Flow.ipynb)
+ 9. Go back to the directory with the repository and start Jupyter Notebook
+ 10. Open the file "Complete Work Flow.ipynb"
+ 11. Replache the Variable API1 with the End Point URL from step 7
+ 12. Repeat steps 2 to 12 but this time with the pipeline fires_bucket_to_bigquery and the variable API2
+ 13. Run all the cells in the file file ["Complete Work Flow.ipynb"](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/Complete%20Work%20Flow.ipynb)
 
 **running this you will be able to** 
 - Download all the files between year 2009 and 2023 for the South America fires
