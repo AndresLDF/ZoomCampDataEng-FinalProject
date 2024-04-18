@@ -61,9 +61,17 @@ You have to install in your computer the following:
 Follow the steps below to fulfill the configuration
  1. Start Docker
  2. Check that mage is online at http://localhost:6789
- 6. Go back to the directory with the repository and start Jupyter Notebook
- 7. Open the file "Complete Work Flow.ipynb"
- 8. Run all the cells
+ 3. Go to fires_data_to_bucket pipeline
+ 4. Go to Triggers
+ 5. Click New Trigger
+ 6. Select the API type
+ 7. Copy the End Point URL
+ 8. Save the new Trigger
+ 9.  10. Go back to the directory with the repository and start Jupyter Notebook
+ 11. Open the file "Complete Work Flow.ipynb"
+ 12. Replache the Variable API1 with the End Point URL from step 7
+ 13. Repeat steps 2 to 12 but this time with the pipeline fires_bucket_to_bigquery and the variable API2
+ 14. Run all the cells in the file file "Complete Work Flow.ipynb"
 
 **running this you will be able to** 
 - Download all the files between year 2009 and 2023 for the South America fires
