@@ -26,10 +26,15 @@ The basic flow flow is
 Before run this project do the following configuration
 **PySpark and MageAI**
 1. Go into a local folder and clone this repository with this command `git clone https://github.com/AndresLDF/ZoomCampDataEng-FinalProject.git`
-2. In the main folder add they Json file with the key for BigQuery 
-3. Open the file magic-zoomcamp/io_config.yaml
-4. In the file search for GOOGLE_SERVICE_ACC_KEY_FILEPATH
-5. Replace glossy-grin-413315-49491a38ee63.json with your own json file name
+2. Rename dev.env to simply .env
+3. Start Docker
+4. Open the directory with the repository
+5. Use the command `docker compose build`
+6. Use the command `docker compose up`
+7. In the main folder add they Json file with the key for BigQuery 
+8. Open the file magic-zoomcamp/io_config.yaml
+9. In the file search for GOOGLE_SERVICE_ACC_KEY_FILEPATH
+10. Replace glossy-grin-413315-49491a38ee63.json with your own json file name
 
 **Google Cloud Configuration**
 1. Go to your Google Cloud count account control panel
@@ -55,11 +60,8 @@ You have to install in your computer the following:
 ## Extracting information and moving it to Google Cloud
 Follow the steps below to fulfill the configuration
  1. Start Docker
- 2. Open the directory with the repository
- 3. Use the command `docker compose build` (do this only the first time)
- 4. Use the command `docker compose up`
- 5. check that mage is online at http://localhost:6789
- 6. Go back to the directory with the repository and star Jupyter Notebook
+ 2. Check that mage is online at http://localhost:6789
+ 6. Go back to the directory with the repository and start Jupyter Notebook
  7. Open the file "Complete Work Flow.ipynb"
  8. Run all the cells
 
