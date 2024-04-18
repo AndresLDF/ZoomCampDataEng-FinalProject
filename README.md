@@ -50,7 +50,7 @@ Before run this project do the following configuration
 4. Fill the git repository with the files in this repository **[data-engineering-zoomcamp-DBT](https://github.com/AndresLDF/data-engineering-zoomcamp-DBT)**
 
 Other configuration
-You have to install in your computer the following:
+You have to install in your computer the following software:
 
 - Spark
 - Python
@@ -71,7 +71,7 @@ Follow the steps below to fulfill the configuration
  11. Open the file "Complete Work Flow.ipynb"
  12. Replache the Variable API1 with the End Point URL from step 7
  13. Repeat steps 2 to 12 but this time with the pipeline fires_bucket_to_bigquery and the variable API2
- 14. Run all the cells in the file file "Complete Work Flow.ipynb"
+ 14. Run all the cells in the file file ["Complete Work Flow.ipynb"](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/Complete%20Work%20Flow.ipynb)
 
 **running this you will be able to** 
 - Download all the files between year 2009 and 2023 for the South America fires
@@ -82,13 +82,14 @@ Follow the steps below to fulfill the configuration
 ![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/2%20-%20Partitions%20Created.png)
 ![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/3%20-%20Partitions%20in%20Buckets.png)
 ![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/4%20-%20Information%20moved%20from%20Buckets%20to%20BigQuery.png)
-## Use dbt to modify to create new tables
+
+## Use dbt to modify data to create new tables
 **Steps to follow**
 1. In Dbt cloud open the project with the files from the repository **[data-engineering-zoomcamp-DBT](https://github.com/AndresLDF/data-engineering-zoomcamp-DBT)**
 2. Build the file at final_project/models/staging/schema.yml
-3. Build the file at final_project/models/staging/staging/stg_staging__all_data.sql
-4. Build the file at final_project/models/core/fires_year.sql
-5. Build the file at final_project/models/core/year_variation.sql
+3. Build the file at [final_project/models/staging/staging/stg_staging__all_data.sql](https://github.com/AndresLDF/data-engineering-zoomcamp-DBT/blob/main/04-analytics/final_project/models/staging/staging/stg_staging__all_data.sql)
+4. Build the file at [final_project/models/core/fires_year.sql](https://github.com/AndresLDF/data-engineering-zoomcamp-DBT/blob/main/04-analytics/final_project/models/core/fires_year.sql)
+5. Build the file at [final_project/models/core/year_variation.sql](https://github.com/AndresLDF/data-engineering-zoomcamp-DBT/blob/main/04-analytics/final_project/models/core/year_variation.sql)
 6. This will create the table fires_year, and year_variation in Bigquery 
 
 ![enter image description here](https://github.com/AndresLDF/ZoomCampDataEng-FinalProject/blob/main/images/5%20-%20dbt%20queries.png)
