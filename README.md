@@ -25,7 +25,7 @@ The basic flow flow is
 ## Preparation
 Before run this project do the following configuration
 **PySpark and MageAI**
-1. Go into a local folder and clone this repository with this command `gh repo clone AndresLDF/ZoomCampDataEng-FinalProject`
+1. Go into a local folder and clone this repository with this command `git clone https://github.com/AndresLDF/ZoomCampDataEng-FinalProject.git`
 2. In the main folder add they Json file with the key for BigQuery 
 3. Open the file magic-zoomcamp/io_config.yaml
 4. In the file search for GOOGLE_SERVICE_ACC_KEY_FILEPATH
