@@ -10,20 +10,22 @@ For this project the following technologies are employed:
  - dbt
  - Google Storate
  - Google BigQuery
+ - Python
 
 The database is extracted from
 - [Fire Database from the Brazil Government](http://terrabrasilis.dpi.inpe.br/queimadas/portal/dados-abertos/#da-focos)
 
 The basic flow flow is
 
- 1. The information from the government site is extracted using the PySpark and divide in partitions 
+ 1. The information from the government site is extracted using python and partitioned with PySpark
  2. Each partition is uploaded to buckets using the Mage API to trigger a Pipeline
  3. Then a second pipeline is call with the API to upload the information in the bucket files to BigQuary
- 4. Then dbt is used to create some working tables
- 5. Looker Studio is used to analyze the tables created to condense the information 
+ 4. Then dbt is used to create 2 working tables
+ 5. Looker Studio is used to create charts from the tables to condense the information 
 
 ## Preparation
 Before run this project do the following configuration
+
 **PySpark and MageAI**
 1. Go into a local folder and clone this repository with this command `git clone https://github.com/AndresLDF/ZoomCampDataEng-FinalProject.git`
 2. Rename dev.env to simply .env
